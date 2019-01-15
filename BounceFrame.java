@@ -13,12 +13,12 @@ public class BounceFrame extends JFrame {
 	public static final int DELAY = 5;
 	
 	public BounceFrame() {
-		setTitle("Pi³ka");
+		setTitle("Ball");
 		comp = new BallComponent();
 		add(comp, BorderLayout.CENTER);
 		JPanel buttonPanel = new JPanel();
 		addButton(buttonPanel,"Start",event->addBall());
-		addButton(buttonPanel,"Zamknij",event->System.exit(0));
+		addButton(buttonPanel,"Close",event->System.exit(0));
 		add(buttonPanel,BorderLayout.SOUTH);
 		pack();
 	}
